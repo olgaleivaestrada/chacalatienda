@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kalam:wght@300;400;700&family=Kanit:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Kalam', cursive;
+    font-family: 'Kanit', sans-serif;
+    color:black;
+    color:black;
+}
+
+body {
+    background-image: var(background-color rgb(254, 255, 255));
+    color: var(background-color rgb(12, 0, 0));
+    font-family: var(--ff-text);    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.caja {
+    background-size: cover;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    opacity: 100%;
+    
+}
+
+.texto1 {
+    position: absolute;
+    top: 100px;
+    right: 10%;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.texto2 {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    right: 6%;
+    font-size: 40px;
+    color: black;
+    font-weight: bold; 
+    padding: 60px;
+}
+
+.main-header {
+    background-color: rgb(254, 255, 255);
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-width:5rem;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.nav-list {
+    display: flex;
+
+    flex-direction: row;
+    gap: 1rem;
+    
+}
+
+.reciclaje1 {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.reciclaje2 {
+    text-align: center;
+    
+}
+
+.video {
+    text-align: center;
+}
+
+.div {
+    text-align: center;
+    
+}
+
+.texto {
+    text-align: center;
+}
+
+.fondoreciclemos {
+    background-image: url("../imagenes/fondoinicio.png");
+    background-size: cover;
+
+}
+
+
+.contacto {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.tarjetitas {
+    padding: 70px;
+    display: flex;
+    gap: 60px;
+}
+
+.cardtranslate {
+     transition: 1s;
+}
+
+.translate:hover {
+    transform: translate(0, -5px);
+}
+
+.scale{
+    transition: 1s;
+}
+
+.scale:hover {
+    transform: scale(1,2) 
+}
+
+.card {
+    background-image: url("../imagenes/fondoinicio.png");
+    padding: 70px;
+    border-radius: 20px;
+    height: 500px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__image {
+    width: 200px;
+    padding: 50px;
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid {
+    background-image: url("../imagenes/fondoinicio.png");
+    text-align: center;
+    font-weight: bold;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid div {
+    border: 10px solid white;
+    padding: 20px;
+    
+}
+
+.grid div img {
+    whidth: 100%;
+    border-radius: 250px;
+}
+
+.contacto {
+    background-image: url("../imagenes/fondoinicio.png");
+    background-size: cover;
+}
+
+.contacto__texto {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 200px 60px;   
+}
+
+@media screen and (max-width: 1024px){
+    .fondoinicio {
+        background-color: white;
+    }
+    .tarjetitas {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .fondoinicio {
+        background-color: white;
+    }
+    .tarjetitas {
+        flex-direction: column;
+    }
+}
+
+.rotate :hover {
+    transform: rotate(360deg);
+
+}
