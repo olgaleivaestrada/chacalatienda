@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kalam:wght@300;400;700&family=Kanit:wght@300;400;500&display=swap');
+
+:root {
+    --ff-text: 'Archivo Black', sans-serif;
+    --ff-heading: 'Fredoka One', cursive;
+    --ff-subheading: 'Kalam', cursive;
+    --ff-alt: 'Kanit', sans-serif;
+    --color-bg: rgb(254, 255, 255);
+    --color-text: rgb(12, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.caja {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 100%;
+}
+
+.texto1 {
+    position: absolute;
+    top: 100px;
+    right: 10%;
+    font-size: 100px;
+    color: black; 
+    font-weight: bold;
+    border-color: white;
+} 
+
+.texto1 h1 {
+    position: absolute;
+    text-align: center;   
+    font-size: 40px;  
+    font-weight: bold;      
+
+}
+
+
+.main-header {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-width: 5rem;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.reciclaje1 h2, 
+.reciclaje2 p {
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+.video {
+    text-align: center;
+}
+
+.div {
+    text-align: center;
+}
+
+.texto {
+    text-align: center;
+}
+
+.fondoreciclemos {
+    background-image: url("../imagenes/fondoinicio.png");
+    background-size: cover;
+}
+
+.contacto {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .contacto__texto {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contacto__texto h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  form input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+.footer  a {    
+    display: block;    
+    
+}
+
+.footer ul {
+    display: flex;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+.footer ul li {
+    margin: 0 8px;
+  }
+.footer p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+  }
+.footer p a {
+    color: #fff;
+  }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #29292a;
+    padding: 60px 0;
+  }
+
+.tarjetitas {
+    padding: 70px;
+    display: flex;
+    gap: 60px;
+}
+
+.cardtranslate {
+    transition: 1s;
+}
+
+.cardtranslate:hover {
+    transform: translate(0, -5px);
+}
+
+.scale {
+    transition: 1s;
+}
+
+.scale:hover {
+    transform: scale(1.2); 
+}
+
+.card {
+    background-image: url("../imagenes/fondoinicio.png");
+    padding: 70px;
+    border-radius: 20px;
+    height: 500px;
+   
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__image {
+    width: 200px;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid {
+    background-image: url("../imagenes/fondoinicio.png");
+    text-align: center;
+    font-weight: bold;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid div {
+    border: 10px solid white;    
+    padding: 20px;
+    
+}
+
+.grid div img {
+    width: 100px;
+    border-radius: 250px;
+}
+
+.contacto {
+    background-image: url("../imagenes/fondoinicio.png");
+    background-size: cover;
+}
+
+.contacto__texto {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 200px 60px;   
+}
+
+.info {   
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+  }
+
+.info-title {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.quienessomos{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .quienes-somos-description {
+    background-color: white;
+  }
+  
+  .logo img {
+    animation: logo-rotate 2s linear infinite;
+  }
+  
+  @keyframes logo-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+@media screen and (max-width: 767px) {
+
+    :root {
+        --ff-text: 'Archivo Black', sans-serif;
+        --ff-heading: 'Fredoka One', cursive;
+        --ff-subheading: 'Kalam', cursive;
+        --ff-alt: 'Kanit', sans-serif;
+        --color-bg: rgb(254, 255, 255);
+        --color-text: rgb(12, 0, 0);
+    }
+    
+    .texto1 {
+        position: absolute;
+        top: 40px;
+        right: 5%;
+        font-size: 50px;
+        color: black; 
+        font-weight: bold;
+        border-color: white;
+    } 
+    
+    .texto1 h1 {
+        font-size: 30px;  
+        font-weight: bold;      
+    }
+
+    .main-header {    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        max-width: 4rem;
+        margin-left: 0;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .reciclaje1 h2, 
+    .reciclaje2 p {
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+    
+    .texto {
+        font-size: 18px;
+    }
+    
+    .contacto__texto h2 {
+        font-size: 24px;
+    }
+    
+    form label {
+        font-size: 16px;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        padding: 8px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    
+    form input[type="submit"] {
+        margin-top: 15px;
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    
+    .footer ul {
+        font-size: 16px;
+    }
+    
+    .footer p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
